@@ -8,6 +8,7 @@ import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 /**Classe Consultas. */
 public class Consultas {
@@ -27,7 +28,11 @@ public class Consultas {
    * conjunto associado a esta mesma chave.</p>
    */
   public Set<String> atoresQueInterpretaramSiProprios() {
-    return emptySet(); // TODO: Implementar.
+    return filmes.stream()
+        .flatMap(filme -> filme.atoresPorPersonagem.entrySet().stream())
+        .filter(entry -> entry.getValue().contains(entry.getKey()))
+        .map(ator -> ator.getKey())
+        .collect(Collectors.toSet());
   }
 
   /**
