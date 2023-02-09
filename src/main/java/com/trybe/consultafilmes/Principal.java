@@ -17,6 +17,7 @@ public class Principal {
     System.out.println(consultas
         .atoresQueAtuaramEmFilmesDoDiretorEmOrdemAlfabetica("Lana Wachowski"));
     System.out.println(consultas.filmesEmQuePeloMenosUmDiretorAtuouMaisRecentesPrimeiro());
+    System.out.println(consultas.filmesLancadosNoAnoAgrupadosPorCategoria(2021));
 
   }
 }
