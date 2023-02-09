@@ -14,5 +14,6 @@ public class Principal {
     Consultas consultas = new Consultas(Filmes.todos());
     Set<String> resultados = consultas.atoresQueInterpretaramSiProprios();
     System.out.println(resultados);
+    System.out.println(consultas.atoresQueAtuaramEmFilmesDoDiretorEmOrdemAlfabetica("Jon Watts"));
   }
 }
