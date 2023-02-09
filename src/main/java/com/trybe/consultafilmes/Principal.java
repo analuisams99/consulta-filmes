@@ -2,6 +2,7 @@ package com.trybe.consultafilmes;
 
 import java.util.Set;
 
+/**Classe Principal. */
 public class Principal {
 
   /**

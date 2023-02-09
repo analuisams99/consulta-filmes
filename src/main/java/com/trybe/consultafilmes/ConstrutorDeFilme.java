@@ -6,6 +6,7 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
+/**Classe ConstrutorDeFilme. */
 public class ConstrutorDeFilme {
 
   private final String titulo;

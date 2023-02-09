@@ -6,6 +6,7 @@ import java.util.Map;
 import java.util.Set;
 import java.util.stream.Collectors;
 
+/**Classe Filme. */
 public class Filme {
 
   public final String titulo;
